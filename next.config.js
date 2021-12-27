@@ -1,9 +1,4 @@
 const path = require('path');
-const withTM = require('next-transpile-modules')([
-  'three',
-  '@deck.gl/geo-layers',
-  '@react-three/drei',
-]);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -17,4 +12,4 @@ const nextConfig = {
     return config;
   },
 };
-module.exports = withTM(nextConfig);
+module.exports = nextConfig;
